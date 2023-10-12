@@ -27,3 +27,15 @@ The `local` folder is intended to be used with a local Kubernetes cluster enable
     ```
     "C:\Program Files\Docker\Docker\Resources\bin\kubectl.exe" apply -f local/nginx.yaml
     ```
+
+2. Review the `.yaml` file to understand where and how to set CPU request and limits.
+
+## Azure deployment
+The `azure` folder is used for deploying through various means to Azure Container Apps.
+
+The `arm` and `bicep` folders will create a Container App Environment and a Container App.
+
+Steps to follow:
+1. Use the commands under each respective folders to deploy and/or change CPU values. This is within the `deploy.sh` file
+    - Make sure to replace the values in the deployment command with your own (eg., resource group, location)
+2. Change the CPU values in the `deploy.json`, `dpeloy.bicep`, or Azure CLI commands to test changing CPU
