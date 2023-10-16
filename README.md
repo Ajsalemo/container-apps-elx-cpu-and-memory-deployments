@@ -1,5 +1,5 @@
-# container-apps-elx-cpu-deployments
-Various ways to define CPU limits for containers - locally, and on Container Apps
+# container-apps-elx-cpu-and-memory-deployments
+Various ways to define CPU and memorylimits for containers - locally, and on Container Apps
 
 
 ## Local usage
@@ -28,7 +28,7 @@ The `local` folder is intended to be used with a local Kubernetes cluster enable
     "C:\Program Files\Docker\Docker\Resources\bin\kubectl.exe" apply -f local/nginx.yaml
     ```
 
-2. Review the `.yaml` file to understand where and how to set CPU request and limits.
+2. Review the `.yaml` file to understand where and how to set CPU and memory request and limits.
 
 ## Azure deployment
 The `azure` folder is used for deploying through various means to Azure Container Apps.
